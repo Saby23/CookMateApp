@@ -59,9 +59,9 @@ struct EditRecipeView: View {
                     
                 }.navigationTitle("Edit recipe")
                     .sheet(isPresented: $showStepEditor, content: {
-                        if editStepIndex == editStepIndex{
-                            EditRecipeStepSheet(step: $viewModel.steps[editStepIndex ?? 0])
-                        }
+                        if let index = editStepIndex {
+                                                EditRecipeStepSheet(step: $viewModel.steps[index])
+                                            }
                     })
                 
             }
