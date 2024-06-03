@@ -1,0 +1,633 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28297A502B9189C700701B47 /* RecipeStepSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28297A4F2B9189C700701B47 /* RecipeStepSheet.swift */; };
+		2830612D2B75C921001282B7 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830612C2B75C921001282B7 /* TimerViewModel.swift */; };
+		2832D6C52B71D67800219B02 /* CookMateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2832D6C42B71D67800219B02 /* CookMateApp.swift */; };
+		2832D6C92B71D67B00219B02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2832D6C82B71D67B00219B02 /* Assets.xcassets */; };
+		2832D6CC2B71D67B00219B02 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2832D6CB2B71D67B00219B02 /* Preview Assets.xcassets */; };
+		2832D6D62B71D72800219B02 /* LoadingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2832D6D52B71D72800219B02 /* LoadingScreen.swift */; };
+		2832D6D82B71D73A00219B02 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2832D6D72B71D73A00219B02 /* HomeScreen.swift */; };
+		2832D6DA2B71D74900219B02 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2832D6D92B71D74900219B02 /* LoginScreen.swift */; };
+		2832D6E12B71D79C00219B02 /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2832D6E02B71D79C00219B02 /* ProfileScreen.swift */; };
+		2832D6E32B71D7C200219B02 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2832D6E22B71D7C200219B02 /* TimerView.swift */; };
+		2832D6E62B71E21500219B02 /* PlaypauseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2832D6E52B71E21500219B02 /* PlaypauseButton.swift */; };
+		284ABC962BD627FE002B15E7 /* RecipeViewListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284ABC952BD627FE002B15E7 /* RecipeViewListCell.swift */; };
+		2855C06C2B997A820009080B /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2855C06B2B997A820009080B /* FirebaseFirestoreSwift */; };
+		2855C06E2B997DBC0009080B /* RecipeListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2855C06D2B997DBC0009080B /* RecipeListItemView.swift */; };
+		286EA86A2B96D05700060D46 /* CreateRecipeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286EA8692B96D05700060D46 /* CreateRecipeViewModel.swift */; };
+		287395EA2B9342DA009BB739 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287395E92B9342DA009BB739 /* Recipe.swift */; };
+		287395ED2B934943009BB739 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 287395EC2B934943009BB739 /* FirebaseAnalytics */; };
+		287395EF2B934943009BB739 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 287395EE2B934943009BB739 /* FirebaseAnalyticsSwift */; };
+		287395F12B934943009BB739 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 287395F02B934943009BB739 /* FirebaseAuth */; };
+		287395F32B934943009BB739 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 287395F22B934943009BB739 /* FirebaseCrashlytics */; };
+		287395F52B934943009BB739 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 287395F42B934943009BB739 /* FirebaseFirestore */; };
+		287395F72B934943009BB739 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 287395F62B934943009BB739 /* FirebaseRemoteConfig */; };
+		287395F92B934943009BB739 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 287395F82B934943009BB739 /* FirebaseRemoteConfigSwift */; };
+		287395FB2B934B12009BB739 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 287395FA2B934B12009BB739 /* GoogleService-Info.plist */; };
+		287395FE2B93530E009BB739 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287395FD2B93530E009BB739 /* User.swift */; };
+		287396012B935866009BB739 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287396002B935866009BB739 /* HeaderView.swift */; };
+		287396032B936295009BB739 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287396022B936295009BB739 /* RegistrationView.swift */; };
+		287396052B94A70C009BB739 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287396042B94A70C009BB739 /* LoginViewModel.swift */; };
+		287396072B94AE35009BB739 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287396062B94AE35009BB739 /* RegistrationViewModel.swift */; };
+		287396092B94B37B009BB739 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287396082B94B37B009BB739 /* Extensions.swift */; };
+		2873960B2B94BB9A009BB739 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2873960A2B94BB9A009BB739 /* MainView.swift */; };
+		2873960D2B94BC58009BB739 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2873960C2B94BC58009BB739 /* MainViewModel.swift */; };
+		289AEA442B9EBCD40013D9F5 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289AEA432B9EBCD40013D9F5 /* ProfileView.swift */; };
+		289AEA462B9EBD750013D9F5 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289AEA452B9EBD750013D9F5 /* ProfileViewModel.swift */; };
+		28A3BE6C2BE8962300E93F40 /* EditRecipeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A3BE6B2BE8962300E93F40 /* EditRecipeViewModel.swift */; };
+		28AEB1EB2BC633D700C64068 /* RecipeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AEB1EA2BC633D700C64068 /* RecipeViewModel.swift */; };
+		28B1630D2BBBC7BB0057CAFF /* RecipeStepListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B1630C2BBBC7BB0057CAFF /* RecipeStepListCellView.swift */; };
+		28B8F9852BFC5D24002CA194 /* EditRecipeStepSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B8F9842BFC5D24002CA194 /* EditRecipeStepSheet.swift */; };
+		28C8C73B2BE9E22400844844 /* EditRecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C8C73A2BE9E22400844844 /* EditRecipeView.swift */; };
+		28CA1EB32B957C9600C1E343 /* CreateRecipeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CA1EB22B957C9600C1E343 /* CreateRecipeCard.swift */; };
+		28CA1EB52B9583F200C1E343 /* HomeScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CA1EB42B9583F200C1E343 /* HomeScreenViewModel.swift */; };
+		28EC08752B8D96E800802DE1 /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EC08742B8D96E800802DE1 /* RecipeView.swift */; };
+		28EC08772B8D97A300802DE1 /* CreateRecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EC08762B8D97A300802DE1 /* CreateRecipeView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		28297A4F2B9189C700701B47 /* RecipeStepSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeStepSheet.swift; sourceTree = "<group>"; };
+		2830612C2B75C921001282B7 /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
+		2832D6C12B71D67800219B02 /* CookMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2832D6C42B71D67800219B02 /* CookMateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookMateApp.swift; sourceTree = "<group>"; };
+		2832D6C82B71D67B00219B02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2832D6CB2B71D67B00219B02 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2832D6D52B71D72800219B02 /* LoadingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScreen.swift; sourceTree = "<group>"; };
+		2832D6D72B71D73A00219B02 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		2832D6D92B71D74900219B02 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		2832D6E02B71D79C00219B02 /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
+		2832D6E22B71D7C200219B02 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		2832D6E52B71E21500219B02 /* PlaypauseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaypauseButton.swift; sourceTree = "<group>"; };
+		284ABC952BD627FE002B15E7 /* RecipeViewListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewListCell.swift; sourceTree = "<group>"; };
+		2855C06D2B997DBC0009080B /* RecipeListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListItemView.swift; sourceTree = "<group>"; };
+		286EA8692B96D05700060D46 /* CreateRecipeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRecipeViewModel.swift; sourceTree = "<group>"; };
+		287395E92B9342DA009BB739 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		287395FA2B934B12009BB739 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		287395FD2B93530E009BB739 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		287396002B935866009BB739 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		287396022B936295009BB739 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		287396042B94A70C009BB739 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		287396062B94AE35009BB739 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		287396082B94B37B009BB739 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		2873960A2B94BB9A009BB739 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		2873960C2B94BC58009BB739 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		289AEA432B9EBCD40013D9F5 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		289AEA452B9EBD750013D9F5 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		28A3BE6B2BE8962300E93F40 /* EditRecipeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditRecipeViewModel.swift; sourceTree = "<group>"; };
+		28AEB1EA2BC633D700C64068 /* RecipeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewModel.swift; sourceTree = "<group>"; };
+		28B1630C2BBBC7BB0057CAFF /* RecipeStepListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeStepListCellView.swift; sourceTree = "<group>"; };
+		28B8F9842BFC5D24002CA194 /* EditRecipeStepSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditRecipeStepSheet.swift; sourceTree = "<group>"; };
+		28C8C73A2BE9E22400844844 /* EditRecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditRecipeView.swift; sourceTree = "<group>"; };
+		28CA1EB22B957C9600C1E343 /* CreateRecipeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRecipeCard.swift; sourceTree = "<group>"; };
+		28CA1EB42B9583F200C1E343 /* HomeScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewModel.swift; sourceTree = "<group>"; };
+		28EC08742B8D96E800802DE1 /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
+		28EC08762B8D97A300802DE1 /* CreateRecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRecipeView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2832D6BE2B71D67800219B02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				287395EF2B934943009BB739 /* FirebaseAnalyticsSwift in Frameworks */,
+				287395F32B934943009BB739 /* FirebaseCrashlytics in Frameworks */,
+				287395F12B934943009BB739 /* FirebaseAuth in Frameworks */,
+				287395F92B934943009BB739 /* FirebaseRemoteConfigSwift in Frameworks */,
+				287395F72B934943009BB739 /* FirebaseRemoteConfig in Frameworks */,
+				287395F52B934943009BB739 /* FirebaseFirestore in Frameworks */,
+				287395ED2B934943009BB739 /* FirebaseAnalytics in Frameworks */,
+				2855C06C2B997A820009080B /* FirebaseFirestoreSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2832D6B82B71D67800219B02 = {
+			isa = PBXGroup;
+			children = (
+				2832D6C32B71D67800219B02 /* CookMate */,
+				2832D6C22B71D67800219B02 /* Products */,
+				2855C06A2B997A820009080B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2832D6C22B71D67800219B02 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2832D6C12B71D67800219B02 /* CookMate.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2832D6C32B71D67800219B02 /* CookMate */ = {
+			isa = PBXGroup;
+			children = (
+				287395FC2B934F7B009BB739 /* Other */,
+				2832D6D32B71D6A100219B02 /* Model */,
+				2832D6D22B71D69600219B02 /* Views */,
+				2832D6D42B71D6AD00219B02 /* ViewModel */,
+				2832D6CA2B71D67B00219B02 /* Preview Content */,
+			);
+			path = CookMate;
+			sourceTree = "<group>";
+		};
+		2832D6CA2B71D67B00219B02 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2832D6CB2B71D67B00219B02 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2832D6D22B71D69600219B02 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				287395FF2B935849009BB739 /* Login and Register */,
+				2832D6E42B71E1E200219B02 /* Buttons */,
+				2873960A2B94BB9A009BB739 /* MainView.swift */,
+				2832D6D52B71D72800219B02 /* LoadingScreen.swift */,
+				28CA1EB62B958B5C00C1E343 /* New Recipe */,
+				284ABC942BD62778002B15E7 /* HomescreenView */,
+				284ABC932BD62742002B15E7 /* Recipe view */,
+				2832D6E02B71D79C00219B02 /* ProfileScreen.swift */,
+				2832D6E22B71D7C200219B02 /* TimerView.swift */,
+				28CA1EB22B957C9600C1E343 /* CreateRecipeCard.swift */,
+				289AEA432B9EBCD40013D9F5 /* ProfileView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2832D6D32B71D6A100219B02 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				287395E92B9342DA009BB739 /* Recipe.swift */,
+				287395FD2B93530E009BB739 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2832D6D42B71D6AD00219B02 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2830612C2B75C921001282B7 /* TimerViewModel.swift */,
+				287396042B94A70C009BB739 /* LoginViewModel.swift */,
+				287396062B94AE35009BB739 /* RegistrationViewModel.swift */,
+				2873960C2B94BC58009BB739 /* MainViewModel.swift */,
+				28CA1EB42B9583F200C1E343 /* HomeScreenViewModel.swift */,
+				286EA8692B96D05700060D46 /* CreateRecipeViewModel.swift */,
+				289AEA452B9EBD750013D9F5 /* ProfileViewModel.swift */,
+				28AEB1EA2BC633D700C64068 /* RecipeViewModel.swift */,
+				28A3BE6B2BE8962300E93F40 /* EditRecipeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2832D6E42B71E1E200219B02 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				2832D6E52B71E21500219B02 /* PlaypauseButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		284ABC932BD62742002B15E7 /* Recipe view */ = {
+			isa = PBXGroup;
+			children = (
+				28EC08742B8D96E800802DE1 /* RecipeView.swift */,
+				284ABC952BD627FE002B15E7 /* RecipeViewListCell.swift */,
+				28C8C73A2BE9E22400844844 /* EditRecipeView.swift */,
+				28B8F9842BFC5D24002CA194 /* EditRecipeStepSheet.swift */,
+			);
+			path = "Recipe view";
+			sourceTree = "<group>";
+		};
+		284ABC942BD62778002B15E7 /* HomescreenView */ = {
+			isa = PBXGroup;
+			children = (
+				2832D6D72B71D73A00219B02 /* HomeScreen.swift */,
+				2855C06D2B997DBC0009080B /* RecipeListItemView.swift */,
+			);
+			path = HomescreenView;
+			sourceTree = "<group>";
+		};
+		2855C06A2B997A820009080B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		287395FC2B934F7B009BB739 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				2832D6C82B71D67B00219B02 /* Assets.xcassets */,
+				2832D6C42B71D67800219B02 /* CookMateApp.swift */,
+				287395FA2B934B12009BB739 /* GoogleService-Info.plist */,
+				287396082B94B37B009BB739 /* Extensions.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		287395FF2B935849009BB739 /* Login and Register */ = {
+			isa = PBXGroup;
+			children = (
+				2832D6D92B71D74900219B02 /* LoginScreen.swift */,
+				287396002B935866009BB739 /* HeaderView.swift */,
+				287396022B936295009BB739 /* RegistrationView.swift */,
+			);
+			path = "Login and Register";
+			sourceTree = "<group>";
+		};
+		28CA1EB62B958B5C00C1E343 /* New Recipe */ = {
+			isa = PBXGroup;
+			children = (
+				28EC08762B8D97A300802DE1 /* CreateRecipeView.swift */,
+				28297A4F2B9189C700701B47 /* RecipeStepSheet.swift */,
+				28B1630C2BBBC7BB0057CAFF /* RecipeStepListCellView.swift */,
+			);
+			path = "New Recipe";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2832D6C02B71D67800219B02 /* CookMate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2832D6CF2B71D67B00219B02 /* Build configuration list for PBXNativeTarget "CookMate" */;
+			buildPhases = (
+				2832D6BD2B71D67800219B02 /* Sources */,
+				2832D6BE2B71D67800219B02 /* Frameworks */,
+				2832D6BF2B71D67800219B02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CookMate;
+			packageProductDependencies = (
+				287395EC2B934943009BB739 /* FirebaseAnalytics */,
+				287395EE2B934943009BB739 /* FirebaseAnalyticsSwift */,
+				287395F02B934943009BB739 /* FirebaseAuth */,
+				287395F22B934943009BB739 /* FirebaseCrashlytics */,
+				287395F42B934943009BB739 /* FirebaseFirestore */,
+				287395F62B934943009BB739 /* FirebaseRemoteConfig */,
+				287395F82B934943009BB739 /* FirebaseRemoteConfigSwift */,
+				2855C06B2B997A820009080B /* FirebaseFirestoreSwift */,
+			);
+			productName = CookMate;
+			productReference = 2832D6C12B71D67800219B02 /* CookMate.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2832D6B92B71D67800219B02 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					2832D6C02B71D67800219B02 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 2832D6BC2B71D67800219B02 /* Build configuration list for PBXProject "CookMate" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2832D6B82B71D67800219B02;
+			packageReferences = (
+				287395EB2B934943009BB739 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 2832D6C22B71D67800219B02 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2832D6C02B71D67800219B02 /* CookMate */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2832D6BF2B71D67800219B02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2832D6CC2B71D67B00219B02 /* Preview Assets.xcassets in Resources */,
+				287395FB2B934B12009BB739 /* GoogleService-Info.plist in Resources */,
+				2832D6C92B71D67B00219B02 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2832D6BD2B71D67800219B02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28EC08772B8D97A300802DE1 /* CreateRecipeView.swift in Sources */,
+				2855C06E2B997DBC0009080B /* RecipeListItemView.swift in Sources */,
+				287396092B94B37B009BB739 /* Extensions.swift in Sources */,
+				289AEA462B9EBD750013D9F5 /* ProfileViewModel.swift in Sources */,
+				286EA86A2B96D05700060D46 /* CreateRecipeViewModel.swift in Sources */,
+				287396072B94AE35009BB739 /* RegistrationViewModel.swift in Sources */,
+				2832D6E32B71D7C200219B02 /* TimerView.swift in Sources */,
+				28B8F9852BFC5D24002CA194 /* EditRecipeStepSheet.swift in Sources */,
+				2832D6D82B71D73A00219B02 /* HomeScreen.swift in Sources */,
+				2873960B2B94BB9A009BB739 /* MainView.swift in Sources */,
+				2832D6C52B71D67800219B02 /* CookMateApp.swift in Sources */,
+				287396052B94A70C009BB739 /* LoginViewModel.swift in Sources */,
+				28EC08752B8D96E800802DE1 /* RecipeView.swift in Sources */,
+				287395FE2B93530E009BB739 /* User.swift in Sources */,
+				2832D6D62B71D72800219B02 /* LoadingScreen.swift in Sources */,
+				289AEA442B9EBCD40013D9F5 /* ProfileView.swift in Sources */,
+				28CA1EB52B9583F200C1E343 /* HomeScreenViewModel.swift in Sources */,
+				2832D6E62B71E21500219B02 /* PlaypauseButton.swift in Sources */,
+				28B1630D2BBBC7BB0057CAFF /* RecipeStepListCellView.swift in Sources */,
+				2832D6DA2B71D74900219B02 /* LoginScreen.swift in Sources */,
+				28A3BE6C2BE8962300E93F40 /* EditRecipeViewModel.swift in Sources */,
+				287396032B936295009BB739 /* RegistrationView.swift in Sources */,
+				287396012B935866009BB739 /* HeaderView.swift in Sources */,
+				2873960D2B94BC58009BB739 /* MainViewModel.swift in Sources */,
+				28297A502B9189C700701B47 /* RecipeStepSheet.swift in Sources */,
+				287395EA2B9342DA009BB739 /* Recipe.swift in Sources */,
+				28AEB1EB2BC633D700C64068 /* RecipeViewModel.swift in Sources */,
+				2830612D2B75C921001282B7 /* TimerViewModel.swift in Sources */,
+				284ABC962BD627FE002B15E7 /* RecipeViewListCell.swift in Sources */,
+				28C8C73B2BE9E22400844844 /* EditRecipeView.swift in Sources */,
+				2832D6E12B71D79C00219B02 /* ProfileScreen.swift in Sources */,
+				28CA1EB32B957C9600C1E343 /* CreateRecipeCard.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2832D6CD2B71D67B00219B02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2832D6CE2B71D67B00219B02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2832D6D02B71D67B00219B02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CookMate/Preview Content\"";
+				DEVELOPMENT_TEAM = AKPP983ZX8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = CookMate;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = saby.CookMate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2832D6D12B71D67B00219B02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CookMate/Preview Content\"";
+				DEVELOPMENT_TEAM = AKPP983ZX8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = CookMate;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = saby.CookMate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2832D6BC2B71D67800219B02 /* Build configuration list for PBXProject "CookMate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2832D6CD2B71D67B00219B02 /* Debug */,
+				2832D6CE2B71D67B00219B02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2832D6CF2B71D67B00219B02 /* Build configuration list for PBXNativeTarget "CookMate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2832D6D02B71D67B00219B02 /* Debug */,
+				2832D6D12B71D67B00219B02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		287395EB2B934943009BB739 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2855C06B2B997A820009080B /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 287395EB2B934943009BB739 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		287395EC2B934943009BB739 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 287395EB2B934943009BB739 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		287395EE2B934943009BB739 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 287395EB2B934943009BB739 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		287395F02B934943009BB739 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 287395EB2B934943009BB739 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		287395F22B934943009BB739 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 287395EB2B934943009BB739 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		287395F42B934943009BB739 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 287395EB2B934943009BB739 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		287395F62B934943009BB739 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 287395EB2B934943009BB739 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		287395F82B934943009BB739 /* FirebaseRemoteConfigSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 287395EB2B934943009BB739 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfigSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 2832D6B92B71D67800219B02 /* Project object */;
+}
