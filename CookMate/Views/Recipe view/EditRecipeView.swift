@@ -36,15 +36,19 @@ struct EditRecipeView: View {
                         }
                         
                         Section (){
-                           
+                            
                             ForEach(recipe.steps.indices, id: \.self) { index in
                                 let step = recipe.steps[index]
-
-                                RecipeStepListCellView(stepNumber: index + 1, step: step).onTapGesture {
-                                    
-                                    editStep = step
+                                
+                                RecipeStepListCellView( stepNumber: index+1, step: step).onTapGesture {
+                                   
                                     editStepIndex = index
+                                    
+                                    
+                              
                                     showStepEditor.toggle()
+                        
+                                    editStep = step
                                 }
                             }
                         }
@@ -53,20 +57,28 @@ struct EditRecipeView: View {
                     
                     Button {
                         viewModel.updateRecipe(recipe: recipe)
+                        
                     } label: {
                         Text("Save")
                     }
                     
                 }.navigationTitle("Edit recipe")
                     .sheet(isPresented: $showStepEditor, content: {
-                        if let index = editStepIndex {
-                                                EditRecipeStepSheet(step: $viewModel.steps[index])
+                        
+                        
+            
+                        if let editStepIndex = editStepIndex {
+                                                EditRecipeStepSheet(step: Binding(
+                                                    get: { viewModel.recipe!.steps[editStepIndex] },
+                                                    set: { viewModel.recipe!.steps[editStepIndex] = $0 }
+                                                ))
                                             }
+                        
                     })
-                
             }
         }
     }
+    
 }
 
 
